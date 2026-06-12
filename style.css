@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Purple-600: hsl(246, 80%, 60%);
+  --Orange-300: hsl(15, 100%, 70%);
+  --Blue-300: hsl(195, 74%, 62%);
+  --Pink-400: hsl(348, 100%, 68%);
+  --Green-400: hsl(145, 58%, 55%);
+  --Purple-700: hsl(264, 64%, 52%);
+  --Yellow-300: hsl(43, 84%, 65%);
+  --Navy-950: hsl(226, 43%, 10%);
+  --Navy-900: hsl(235, 46%, 20%);
+  --Purple-500: hsl(235, 45%, 61%);
+  --Navy-200: hsl(236, 100%, 87%);
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/Rubik/Rubik-VariableFont_wght.ttf");
+  font-style: normal;
+  font-weight: 100 900;
+}
+body {
+  min-height: 100vh;
+  font-family: "Rubik", serif;
+  font-weight: 300;
+  background-color: var(--Navy-950);
+  font-size: 1.1em;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  padding: 4em 1em;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+}
+
+.userDetailsContainer {
+  background-color: var(--Navy-900);
+  border-radius: 1em;
+}
+
+.userDetails {
+  background-color: var(--Purple-600);
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  border-radius: 1em;
+  padding: 2em;
+}
+.userDetails img {
+  width: 4.5em;
+  height: 4.5em;
+  border: 0.2em white solid;
+  border-radius: 50%;
+}
+.userDetails p {
+  color: var(--Navy-200);
+  margin-bottom: 0.3em;
+}
+.userDetails span {
+  font-size: 1.2em;
+}
+
+.periodSpecification {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+.periodSpecification button {
+  color: var(--Purple-500);
+  background-color: transparent;
+  border: transparent;
+  text-transform: capitalize;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.periodSpecification button:hover, .periodSpecification button:focus {
+  color: white;
+}
+
+.cardsContainer {
+  margin-top: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.activityCard {
+  height: 9.5em;
+  border-radius: 1em;
+  display: flex;
+}
+.activityCard .card {
+  background-color: var(--Navy-900);
+  border-radius: 1em;
+  width: 100%;
+  align-self: flex-end;
+  bottom: 0;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.activityCard .card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.activityCard .card div p {
+  font-weight: 500;
+}
+.activityCard .card div h1, .activityCard .card div h2 {
+  font-weight: 300;
+  font-size: 2em;
+}
+.activityCard .card div span {
+  color: var(--Navy-200);
+  text-transform: capitalize;
+}
+
+.work {
+  background: url("./assets/images/icon-work.svg"), var(--Orange-300);
+  background-repeat: no-repeat;
+  background-position: 92% -10%;
+}
+
+.play {
+  background: url("./assets/images/icon-play.svg"), var(--Blue-300);
+  background-repeat: no-repeat;
+  background-position: 92% -5%;
+}
+
+.study {
+  background: url("./assets/images/icon-study.svg"), var(--Pink-400);
+  background-repeat: no-repeat;
+  background-position: 92% -8%;
+}
+
+.exercise {
+  background: url("./assets/images/icon-exercise.svg"), var(--Green-400);
+  background-repeat: no-repeat;
+  background-position: 92% 0;
+}
+
+.social {
+  background: url("./assets/images/icon-social.svg"), var(--Purple-700);
+  background-repeat: no-repeat;
+  background-position: 92% -15%;
+}
+
+.self_care {
+  background: url("./assets/images/icon-self-care.svg"), var(--Yellow-300);
+  background-repeat: no-repeat;
+  background-position: 92% -8%;
+}/*# sourceMappingURL=style.css.map */
