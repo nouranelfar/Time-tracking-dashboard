@@ -175,7 +175,7 @@ main {
   .container {
     display: flex;
     gap: 2em;
-    width: 75%;
+    width: 78%;
   }
   .cardsContainer {
     flex-direction: row;
@@ -184,7 +184,7 @@ main {
     gap: 2em;
   }
   .userDetailsContainer {
-    width: 28em;
+    width: 32em;
     border-radius: 0.8em;
   }
   .userDetails {
@@ -208,7 +208,7 @@ main {
   .periodSpecification {
     flex-direction: column;
     align-items: start;
-    gap: 1em;
+    gap: 1.5em;
     padding: 2em;
   }
   .periodSpecification button {
@@ -216,7 +216,7 @@ main {
   }
   .activityCard {
     width: 16em;
-    height: 15em;
+    height: 16em;
     border-radius: 0.8em;
   }
   .activityCard .card {
@@ -228,7 +228,7 @@ main {
     flex-direction: column;
     align-items: start;
     gap: 0.5em;
-    padding-top: 1em;
+    padding-top: 2em;
   }
   .activityCard .card .score h2 {
     font-size: 3rem;

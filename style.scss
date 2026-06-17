@@ -188,7 +188,7 @@ $radius: .8em;
     .container{
         display: flex;
         gap: 2em;
-        width: 75%;
+        width: 78%;
     }
 
     .cardsContainer{
@@ -199,7 +199,7 @@ $radius: .8em;
     }
 
     .userDetailsContainer{
-        width: 28em;
+        width: 32em;
         border-radius: $radius;
     }
 
@@ -228,7 +228,7 @@ $radius: .8em;
     .periodSpecification{
         flex-direction: column;
         align-items: start;
-        gap: 1em;
+        gap: 1.5em;
         padding: 2em;
 
         button{
@@ -238,7 +238,7 @@ $radius: .8em;
 
     .activityCard{
         width: 16em;
-        height: 15em;
+        height: 16em;
         border-radius: $radius;
 
         .card{
@@ -250,7 +250,7 @@ $radius: .8em;
                 flex-direction: column;
                 align-items: start;
                 gap: 0.5em;
-                padding-top: 1em;
+                padding-top: 2em;
 
                 h2{
                     font-size: 3rem;
