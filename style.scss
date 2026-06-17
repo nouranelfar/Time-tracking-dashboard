@@ -199,14 +199,14 @@ $radius: .8em;
     }
 
     .userDetailsContainer{
-        width: 26em;
+        width: 28em;
         border-radius: $radius;
     }
 
     .userDetails{
         flex-direction: column;
         align-items: start;
-        gap: 2em;
+        gap: 3em;
         padding: 2em;
         height: 65%;
         border-radius: $radius;
@@ -237,12 +237,14 @@ $radius: .8em;
     }
 
     .activityCard{
-        width: 15.5em;
-        height: 13.6em;
+        width: 16em;
+        height: 15em;
         border-radius: $radius;
 
         .card{
             border-radius: $radius;
+            padding: 2em;
+
             .score{
                 display: flex;
                 flex-direction: column;
