@@ -26,10 +26,10 @@
 }
 body {
   min-height: 100vh;
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 300;
   background-color: var(--Navy-950);
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: white;
 }
 
@@ -66,8 +66,9 @@ main {
   color: var(--Navy-200);
   margin-bottom: 0.3em;
 }
-.userDetails span {
+.userDetails h1 {
   font-size: 1.2em;
+  font-weight: 300;
 }
 
 .periodSpecification {
@@ -83,7 +84,7 @@ main {
   font-size: 1.1em;
   cursor: pointer;
 }
-.periodSpecification button:hover, .periodSpecification button:focus {
+.periodSpecification button:hover, .periodSpecification button.active {
   color: white;
 }
 
@@ -112,13 +113,17 @@ main {
 }
 .activityCard .card div {
   display: flex;
+  gap: 0.5em;
   justify-content: space-between;
   align-items: center;
+}
+.activityCard .card div img {
+  cursor: pointer;
 }
 .activityCard .card div p {
   font-weight: 500;
 }
-.activityCard .card div h1, .activityCard .card div h2 {
+.activityCard .card div h2 {
   font-weight: 300;
   font-size: 2em;
 }
@@ -161,4 +166,68 @@ main {
   background: url("./assets/images/icon-self-care.svg"), var(--Yellow-300);
   background-repeat: no-repeat;
   background-position: 92% -8%;
+}
+
+@media (min-width: 80em) {
+  body {
+    font-size: 0.9rem;
+  }
+  .container {
+    display: flex;
+    gap: 1.5em;
+    width: 70%;
+  }
+  .cardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 0;
+  }
+  .userDetailsContainer {
+    width: 25em;
+    border-radius: 0.8em;
+  }
+  .userDetails {
+    flex-direction: column;
+    align-items: start;
+    gap: 2em;
+    padding: 1.5em 1em;
+    height: 65%;
+    border-radius: 0.8em;
+  }
+  .userDetails img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+  .userDetails p {
+    font-size: 0.9rem;
+  }
+  .userDetails h1 {
+    font-size: 2rem;
+  }
+  .periodSpecification {
+    flex-direction: column;
+    align-items: start;
+    gap: 1em;
+    padding: 1.8em 1em;
+  }
+  .periodSpecification button {
+    font-size: 1rem;
+  }
+  .activityCard {
+    width: 14.5em;
+    height: 13em;
+    border-radius: 0.8em;
+  }
+  .activityCard .card {
+    border-radius: 0.8em;
+  }
+  .activityCard .card .score {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5em;
+  }
+  .activityCard .card .score h2 {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

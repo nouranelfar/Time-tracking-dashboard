@@ -9,62 +9,6 @@
   <title>Frontend Mentor | Time tracking dashboard</title>
 </head>
 <body>
-<!--
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work-->
-  <!--5hrs  daily -->
-  <!--Previous - 7hrs  daily -->
-  <!--32hrs   weekly -->
-  <!--Previous - 36hrs   weekly -->
-  <!--103hrs  monthly -->
-  <!--Previous - 128hrs   monthly -->
-
-  <!--Play-->
-  <!--1hr  daily -->
-  <!--Previous - 2hrs   daily -->
-  <!--10hrs   weekly -->
-  <!--Previous - 8hrs   weekly -->
-  <!--23hrs  monthly -->
-  <!--Previous - 29  monthly -->
-
-  <!--Study-->
-  <!-- 0hrs   daily -->
-  <!-- Previous - 1hr   daily -->
-  <!-- 4hrs   weekly -->
-  <!-- Previous - 7hrs   weekly -->
-  <!-- 13hrs   monthly -->
-  <!-- Previous - 19hrs   monthly -->
-
-  <!--Exercise-->
-  <!--1hr  daily -->
-  <!--Previous - 1hr   daily -->
-  <!--4hrs   weekly -->
-  <!--Previous - 5hrs   weekly -->
-  <!--11hrs   monthly -->
-  <!--Previous - 18hrs   monthly -->
-
-  <!--Social-->
-  <!--1hr   daily -->
-  <!--Previous - 3hrs   daily -->
-  <!--5hrs   weekly -->
-  <!--Previous - 10hrs   weekly -->
-  <!--21hrs   monthly -->
-  <!--Previous - 23hrs   monthly -->
-
-  <!--Self Care-->
-  <!-- 0hrs   daily -->
-  <!-- Previous - 1hr   daily -->
-  <!-- 2hrs   weekly -->
-  <!-- Previous - 2hrs   weekly -->
-  <!-- 7hrs   monthly -->
-  <!-- Previous - 11hrs   monthly -->
-
   <main>
     <div class="container">
       <div class="userDetailsContainer">
@@ -72,11 +16,11 @@
           <img src="./assets/images/image-jeremy.png" alt="Jeremy image">
           <div>
             <p>Report for</p>
-            <span>Jeremy Robson</span>
+            <h1>Jeremy Robson</h1>
           </div>
         </div>
         <div class="periodSpecification">
-          <button type="button" id="daily">daily</button>
+          <button type="button" id="daily" class="active">daily</button>
           <button type="button" id="weekly">weekly</button>
           <button type="button" id="monthly">monthly</button>
         </div>
@@ -89,9 +33,9 @@
               <p>Work</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h1>32hrs</h1>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -102,9 +46,9 @@
               <p>Play</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h2>32hrs</h2>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -115,9 +59,9 @@
               <p>Study</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h2>32hrs</h2>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -128,9 +72,9 @@
               <p>Exercise</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h2>32hrs</h2>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -141,9 +85,9 @@
               <p>Social</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h2>32hrs</h2>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -154,9 +98,9 @@
               <p>Self Care</p>
               <img src="./assets/images/icon-ellipsis.svg" alt>
             </div>
-            <div>
-              <h2>32hrs</h2>
-              <span>last week-36hrs</span>
+            <div class="score">
+              <h2></h2>
+              <span></span>
             </div>
           </div>
         </div>
@@ -164,5 +108,6 @@
       </div>
     </div>
   </main>
+  <script type="module" src="./script.js" defer></script>
 </body>
 </html>

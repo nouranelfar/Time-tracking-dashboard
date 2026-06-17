@@ -25,12 +25,14 @@
     font-weight: 100 900;
 }
 
+$mobil-radius: 1em;
+
 body{
     min-height: 100vh;
-    font-family: 'Rubik', serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 300;
     background-color: var(--Navy-950);
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: white;
 }
 
@@ -46,7 +48,7 @@ main{
 
 .userDetailsContainer{
     background-color: var(--Navy-900);
-    border-radius: 1em;
+    border-radius: $mobil-radius;
 }
 
 .userDetails{
@@ -54,7 +56,7 @@ main{
     display: flex;
     align-items: center;
     gap: 1em;
-    border-radius: 1em;
+    border-radius: $mobil-radius;
     padding: 2em;
 
     img{
@@ -69,8 +71,9 @@ main{
         margin-bottom: 0.3em;
     }
 
-    span{
+    h1{
         font-size: 1.2em;
+        font-weight: 300;
     }
 }
 
@@ -87,8 +90,8 @@ main{
         font-size: 1.1em;
         cursor: pointer;
 
-        &:hover , 
-        &:focus{
+        &:hover,
+        &.active{
             color: white;
         }
     }
@@ -103,12 +106,12 @@ main{
 
 .activityCard{
     height: 9.5em;
-    border-radius: 1em;
+    border-radius: $mobil-radius;
     display: flex;
 
     .card{
         background-color: var(--Navy-900);
-        border-radius: 1em;
+        border-radius: $mobil-radius;
         width: 100%;
         align-self: flex-end;
         bottom: 0;
@@ -119,14 +122,19 @@ main{
 
         div{
             display: flex;
+            gap: 0.5em;
             justify-content: space-between;
             align-items: center;
+
+            img{
+                cursor: pointer;
+            }
 
             p{
                 font-weight: 500;
             }
 
-            h1,h2{
+            h2{
                 font-weight: 300;
                 font-size: 2em;
             }
@@ -139,38 +147,111 @@ main{
     }
 }
 
-.work{
-    background: url("./assets/images/icon-work.svg"), var(--Orange-300);
+@mixin activity-bg($icon, $color, $position) {
+    background: url($icon), $color;
     background-repeat: no-repeat;
-    background-position: 92% -10%;
+    background-position: $position;
+}
+
+.work{
+    @include activity-bg("./assets/images/icon-work.svg", var(--Orange-300), 92% -10%)
 }
 
 .play{
-    background: url("./assets/images/icon-play.svg"), var(--Blue-300);
-    background-repeat: no-repeat;
-    background-position: 92% -5%;
+    @include activity-bg("./assets/images/icon-play.svg", var(--Blue-300), 92% -5%)
 }
 
 .study{
-    background: url("./assets/images/icon-study.svg"), var(--Pink-400);
-    background-repeat: no-repeat;
-    background-position: 92% -8%;
+    @include activity-bg("./assets/images/icon-study.svg",var(--Pink-400) , 92% -8%)
 }
 
 .exercise{
-    background: url("./assets/images/icon-exercise.svg"), var(--Green-400);
-    background-repeat: no-repeat;
-    background-position: 92% 0;
+    @include activity-bg("./assets/images/icon-exercise.svg",var(--Green-400) , 92% 0)
 }
 
 .social{
-    background: url("./assets/images/icon-social.svg"), var(--Purple-700);
-    background-repeat: no-repeat;
-    background-position: 92% -15%;
+    @include activity-bg("./assets/images/icon-social.svg", var(--Purple-700), 92% -15%)
 }
 
 .self_care{
-    background: url("./assets/images/icon-self-care.svg"), var(--Yellow-300);
-    background-repeat: no-repeat;
-    background-position: 92% -8%;
+    @include activity-bg("./assets/images/icon-self-care.svg", var(--Yellow-300), 92% -8%)
+}
+
+$radius: .8em;
+
+@media (min-width: 80em){
+
+    body{
+        font-size: .9rem;
+    }
+
+    .container{
+        display: flex;
+        gap: 1.5em;
+        width: 70%;
+    }
+
+    .cardsContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+
+    .userDetailsContainer{
+        width: 25em;
+        border-radius: $radius;
+    }
+
+    .userDetails{
+        flex-direction: column;
+        align-items: start;
+        gap: 2em;
+        padding: 1.5em 1em;
+        height: 65%;
+        border-radius: $radius;
+
+        img{
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        p{
+            font-size: .9rem;
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+    }
+
+    .periodSpecification{
+        flex-direction: column;
+        align-items: start;
+        gap: 1em;
+        padding: 1.8em 1em;
+
+        button{
+            font-size: 1rem;
+        }
+    }
+
+    .activityCard{
+        width: 14.5em;
+        height: 13em;
+        border-radius: $radius;
+
+        .card{
+            border-radius: $radius;
+            .score{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 0.5em;
+
+                h2{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
 }
