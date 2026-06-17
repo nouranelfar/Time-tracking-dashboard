@@ -188,17 +188,18 @@ $radius: .8em;
     .container{
         display: flex;
         gap: 1.5em;
-        width: 70%;
+        width: 75%;
     }
 
     .cardsContainer{
         flex-direction: row;
         flex-wrap: wrap;
         margin-top: 0;
+        gap: 2em;
     }
 
     .userDetailsContainer{
-        width: 25em;
+        width: 26em;
         border-radius: $radius;
     }
 
@@ -206,7 +207,7 @@ $radius: .8em;
         flex-direction: column;
         align-items: start;
         gap: 2em;
-        padding: 1.5em 1em;
+        padding: 2em;
         height: 65%;
         border-radius: $radius;
 
@@ -228,7 +229,7 @@ $radius: .8em;
         flex-direction: column;
         align-items: start;
         gap: 1em;
-        padding: 1.8em 1em;
+        padding: 2em;
 
         button{
             font-size: 1rem;
@@ -236,8 +237,8 @@ $radius: .8em;
     }
 
     .activityCard{
-        width: 14.5em;
-        height: 13em;
+        width: 15.5em;
+        height: 13.6em;
         border-radius: $radius;
 
         .card{
@@ -247,6 +248,7 @@ $radius: .8em;
                 flex-direction: column;
                 align-items: start;
                 gap: 0.5em;
+                padding-top: 1em;
 
                 h2{
                     font-size: 3rem;
